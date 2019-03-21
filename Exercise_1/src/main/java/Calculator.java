@@ -1,18 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public interface Calculator {
     /**
-     * Student 1
-     * Student 2+
-
+     * Student 1: Julia Trummer
+     * Student 2: Lea Franz
      *
      * TODO Instruction for GIT Lab for Grading GIT Part of Configuration Management
      *  - copy content of this git repository / zip file
      *
      *	- create your own remote repository, take care about Project Layout (!)
      *
-     *  (! Student 1 !)
-     *  - create Main Class with 'public static void main(String[] args)'
-     *	- create empty getMinimum()
-     *	- create empty getMaximum()
+
      *	- create addValue() which add an Integer to a list for later usage in getMinimum(), getMaximum() and other Methods
      *
      *  => publish current skeleton for your colleague(s) in remote repository
@@ -59,10 +58,11 @@ public interface Calculator {
      *
      */
 
+
+    void addValue(int value);
+
     int getMaximum();
 
     int getMinimum();
-
-    void addValue();
 
 }
