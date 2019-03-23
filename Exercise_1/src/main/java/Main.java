@@ -9,9 +9,15 @@ public class Main implements Calculator {
     */
     public List<Integer> values = new ArrayList();
 
-    public int getMaximum() {
+    public int getMaximum(List<Integer> list) {
         //gets back the maximum
-        return 0;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) > max) {
+                max = list.get(i);
+            }
+        }
+        return max;
     }
 
     public int getMinimum() {
@@ -20,7 +26,6 @@ public class Main implements Calculator {
     }
 
     public void addValue(int value) {
-
         values.add(value);
     }
 
@@ -37,6 +42,7 @@ public class Main implements Calculator {
         // output lowest number
 
         // output highest number
+        System.out.println(calc.getMaximum(((Main) calc).values));
 
         // output sum of all numbers
 
