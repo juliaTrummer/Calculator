@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main implements Calculator {
-        /*
-       //Project: Calculator
-       //Last changes: 21.03.2019
-       //Author: Lea Franz, Julia Trummer
-        */
-        public List<Integer> values = new ArrayList();
+    /*
+   //Project: Calculator
+   //Last changes: 21.03.2019
+   //Author: Lea Franz, Julia Trummer
+    */
+    public List<Integer> values = new ArrayList();
 
     public int getMaximum() {
         //gets back the maximum
@@ -19,18 +19,18 @@ public class Main implements Calculator {
         return 0;
     }
 
-    public void addValue() {
+    public void addValue(int value) {
 
         values.add(value);
     }
 
     public static void main(String[] args) {
 
-        Calculator calc = new CalculatorImpl();
+        Calculator calc = new Main();
 
-        calc.add(20);    // currently highest number
-        calc.add(4);    // currently lowester number
-        calc.add(16);
+        calc.addValue(20);    // currently highest number
+        calc.addValue(4);    // currently lowester number
+        calc.addValue(16);
 
         // add other integers
 
