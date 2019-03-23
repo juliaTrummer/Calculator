@@ -55,7 +55,7 @@ public interface Calculator {
      *   -> (add) 		-> Commit (TO LOCAL) 		-> Push (TO REMOTE)
      *   					  		(LOCAL)			<- Pull (FROM REMOTE)
      *
-     *
+     *a
      */
 
 

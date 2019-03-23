@@ -44,6 +44,7 @@ public class Main implements Calculator {
         // output highest number
         System.out.println(calc.getMaximum(((Main) calc).values));
 
+
         // output sum of all numbers
 
 
