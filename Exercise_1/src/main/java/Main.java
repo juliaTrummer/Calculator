@@ -56,7 +56,7 @@ public class Main implements Calculator {
         calc.addValue(22);
         calc.addValue(12);
         calc.addValue(15);
-        calc.addValue(1);
+        calc.addValue(2);
 
 
         // output lowest number
