@@ -30,6 +30,7 @@ public class Main implements Calculator {
         return list.get(0);
     }
     public int getSum(List<Integer> list){
+        //gets sum of list
         Integer integerSum = list.stream().mapToInt(Integer::intValue).sum();
         return integerSum;
     }
@@ -49,7 +50,7 @@ public class Main implements Calculator {
         // add other integers
 
         // output lowest number
-
+        
         // output highest number
         System.out.println(calc.getMaximum(((Main) calc).values));
 
