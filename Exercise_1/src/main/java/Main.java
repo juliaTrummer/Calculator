@@ -31,11 +31,14 @@ public class Main implements Calculator {
     }
 
     public void addValue(int value) {
+        //adds value to a List
         values.add(value);
     }
 
     public static int getSum(List<Integer> list) {
+        //gets summ of all integers in list
         int sum = 0;
+        //interate through list and adds value from list to sum;
         for (int i = 0; i < list.size(); i++) {
             sum += list.get(i);
         }
