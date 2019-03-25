@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main implements Calculator {
@@ -20,9 +21,13 @@ public class Main implements Calculator {
         return max;
     }
 
-    public int getMinimum() {
-        //gets back the minimum
-        return 0;
+    public int getMinimum(List<Integer> list) {
+        //creates a List
+        List<Integer> sortedlist = new ArrayList(list);
+        //sorts list from smallest to largest number
+        Collections.sort(list);
+        //returns first element of list
+        return sortedlist.get(0);
     }
 
     public void addValue(int value) {
@@ -38,7 +43,7 @@ public class Main implements Calculator {
         calc.addValue(16);
 
         // add other integers
-
+        System.out.println("Hello!");
         // output lowest number
 
         // output highest number
