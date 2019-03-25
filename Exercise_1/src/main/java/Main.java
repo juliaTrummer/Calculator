@@ -5,7 +5,7 @@ import java.util.List;
 public class Main implements Calculator {
     /*
    //Project: Calculator
-   //Last changes: 21.03.2019
+   //Last changes: 25.03.2019
    //Author: Lea Franz, Julia Trummer
     */
     public List<Integer> values = new ArrayList();
@@ -34,6 +34,15 @@ public class Main implements Calculator {
         values.add(value);
     }
 
+    public static int getSum(List<Integer> list) {
+        int sum = 0;
+        for (int i = 0; i < list.size(); i++) {
+            sum += list.get(i);
+        }
+        return sum;
+    }
+
+
     public static void main(String[] args) {
 
         Calculator calc = new Main();
@@ -43,15 +52,20 @@ public class Main implements Calculator {
         calc.addValue(16);
 
         // add other integers
-        System.out.println("Hello!");
+        calc.addValue(5);
+        calc.addValue(22);
+        calc.addValue(12);
+        calc.addValue(15);
+
+
         // output lowest number
+        System.out.println(calc.getMinimum(((Main) calc).values));
 
         // output highest number
         System.out.println(calc.getMaximum(((Main) calc).values));
 
-
         // output sum of all numbers
-
+        System.out.println(getSum(((Main) calc).values));
 
     }
 
