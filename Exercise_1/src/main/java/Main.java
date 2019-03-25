@@ -1,3 +1,5 @@
+import org.graalvm.compiler.loop.MathUtil;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,12 +24,14 @@ public class Main implements Calculator {
     }
 
     public int getMinimum(List<Integer> list) {
-        //creates a List
-        List<Integer> sortedlist = new ArrayList(list);
         //sorts list from smallest to largest number
         Collections.sort(list);
         //returns first element of list
-        return sortedlist.get(0);
+        return list.get(0);
+    }
+    public int getSum(List<Integer> list){
+        Integer integerSum = list.stream().mapToInt(Integer::intValue).sum();
+        return integerSum;
     }
 
     public void addValue(int value) {
@@ -43,7 +47,7 @@ public class Main implements Calculator {
         calc.addValue(16);
 
         // add other integers
-        System.out.println("Hello!");
+
         // output lowest number
 
         // output highest number
