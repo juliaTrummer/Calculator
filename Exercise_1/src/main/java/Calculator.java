@@ -11,24 +11,6 @@ public interface Calculator {
      *
      *	- create your own remote repository, take care about Project Layout (!)
      *
-
-     *	- create addValue() which add an Integer to a list for later usage in getMinimum(), getMaximum() and other Methods
-     *
-     *  => publish current skeleton for your colleague(s) in remote repository
-     *
-     *
-     *  (! Student 1 !)
-     *  - implement getMinimum() which returns lowest Integer
-     *	- test your method in main()
-     *
-     *  => publish current implementation for your colleague(s) in remote repository
-     *
-     *
-     *  (! Student 2 !)
-     *  - implement getMaximum() which returns highest Integer
-     *	- test your method in main()
-     *
-     *  => publish current implementation for your colleague(s) in remote repository
      *
      *
      * (! all Students !)
