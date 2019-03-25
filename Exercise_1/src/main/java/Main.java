@@ -1,4 +1,4 @@
-import org.graalvm.compiler.loop.MathUtil;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,11 +28,6 @@ public class Main implements Calculator {
         Collections.sort(list);
         //returns first element of list
         return list.get(0);
-    }
-    public int getSum(List<Integer> list){
-        //gets sum of list
-        Integer integerSum = list.stream().mapToInt(Integer::intValue).sum();
-        return integerSum;
     }
 
     public void addValue(int value) {
@@ -65,16 +60,13 @@ public class Main implements Calculator {
 
 
         // output lowest number
-        System.out.println(calc.getMinimum(((Main) calc).values));
+        System.out.println("Minimum: "+calc.getMinimum(((Main) calc).values));
 
-
-        // output lowest number
-        
         // output highest number
-        System.out.println(calc.getMaximum(((Main) calc).values));
+        System.out.println("Maximum: "+calc.getMaximum(((Main) calc).values));
 
         // output sum of all numbers
-        System.out.println(getSum(((Main) calc).values));
+        System.out.println("Sum: "+getSum(((Main) calc).values));
 
     }
 
