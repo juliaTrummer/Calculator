@@ -63,6 +63,6 @@ public interface Calculator {
 
     int getMaximum(List<Integer> list);
 
-    int getMinimum();
+    int getMinimum(List <Integer> list);
 
 }
